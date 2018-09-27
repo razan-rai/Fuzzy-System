@@ -11,6 +11,8 @@ creating fuzzy sets and computing
 8) core
 9) boundary
 
-##Implementing fuzzy membership function
+#Implementing fuzzy membership function
+
+#Fuzzy relation from the Fuzzy sets
 
 
