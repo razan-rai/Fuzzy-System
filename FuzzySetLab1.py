@@ -31,6 +31,14 @@ class FuzzySet:
                         union_is.append(tuple((element1, member1)))
                     else:
                         union_is.append(tuple((element2, member2)))
+# =============================================================================
+#                 else:
+#                     if(element1 and ):
+#                         union_is.append(tuple((element1, member1)))
+#                     else:
+#                         union_is.append(tuple((element2, member2)))
+#                     union_is.append(tuple((element1, member1)))
+# =============================================================================
         return union_is
     
     def intersection(set1, set2):
