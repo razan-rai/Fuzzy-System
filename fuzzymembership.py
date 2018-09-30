@@ -30,7 +30,9 @@ class FuzzyMembership:
                 res = (x - alfa)/(beta - alfa)
                 r_function.append(tuple((res, x)))
             elif(beta <= x):
-                r_function.append(tuple(1, x))
+                r_function.append(tuple((1, x)))
+            else:
+                pass
         print('The R_function is:', r_function)
         
     def l_function():
@@ -42,8 +44,8 @@ class FuzzyMembership:
             elif(alfa < x < beta):
                 res = (x - alfa)/(beta - alfa)
                 l_function.append(tuple((res, x)))
-            elif(x > beta):
-                l_function.append(tuple(0, x))
+            elif(x >= beta):
+                l_function.append(tuple((0, x)))
         print('The L_function is:', l_function)
         
     def trangular():
@@ -60,7 +62,7 @@ class FuzzyMembership:
                 res2 = (x - beta)/(gama - beta)
                 t_function.append(tuple((res2, x)))
             elif(x >= gama):
-                t_function.append(tuple(0, x))
+                t_function.append(tuple((0, x)))
         print('The Trangular Function is:', t_function)
             
         
